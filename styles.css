@@ -1,0 +1,94 @@
+/* HTML Tags */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Geral */
+
+#header {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#bingo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 90vh;
+}
+
+#header > p, #bingo > * {
+    flex-grow: 1;
+    font-size: 5vh;
+    margin: 0;
+    text-align: center;
+    width: 20vw;
+}
+
+#header > p {
+    background-color: #000;
+    color: #fff;
+    padding: 2vh 0;
+}
+
+#bingo > * {
+    border: 1px solid #000;
+}
+
+#bingo > .imgContainer {
+    background-color: #ddd;
+    position: relative;
+}
+#bingo .imgCenter {
+    height: 10vh;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#bingo input[type=number]:read-only {
+    background-color: #ddd;
+  }
+ #bingo input[type=number].checked {
+    background-color: #0f0;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10vh;
+}
+#buttons input[type=button] {
+    /*flex: 1 1 auto;*/
+    
+    border: 1px #000 solid;
+    font-size: 3vh;
+    margin: 5px;
+    padding: 0 2vw;
+}
