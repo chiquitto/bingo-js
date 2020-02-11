@@ -56,11 +56,11 @@ main {
     border: 1px solid #000;
 }
 
-#bingo > .imgContainer {
+#bingo > #indio{
     background-color: #ddd;
     position: relative;
 }
-#bingo .imgCenter {
+#bingo #indio img {
     height: 10vh;
 
     margin: 0;
